@@ -41,13 +41,12 @@ On Fairness, using this data will also not lead to any significant discriminator
 
 On Accuracy, it is difficult to ascertain the exact accuracy of the dataset as there are no other ways to triangulate it. The ethical issue at play for accuracy is that if the data is of poor quality, especially in terms of accuracy it may lead to unfair outcomes. In terms of data quality, there are quite a number of missing variables in the data, which ideally should be mitigated further to reduce biasedness. The model that I built relies on listwise deletion, which if the missing variables are not missing completely at random (MCAR), could potentially introduce bias into my model. I have tested it before, and the missing values are indeed not MCAR. As such, there are some bias introduced into the model on my decision to use listwise deletion. That being said, as the dataset did not really have any variables that are more sensitive to vulnerable groups, it is unlikely that the poorer quality and the decision to use listwise deletion (which introduced additional bias) would lead to any ethical or discriminatory outcomes that are unfavourable to certain vulnerable groups.
 
-On Accountability, the idea is that if there are something wrong with the AI model, it should be possible to accuractely assign liability for different parties. For this project, we are all very clear on the individual parts that we are taking, and the models that we have built. Each of our group members have their own research questions, and as such, i beleive it is possible to for us to be accountable if there are indeed something wrong with our models that lead to unfavourable outcomes, but again as I have mentioned, this risk is very low because of the type of data available in the dataset.
+On Accountability, the idea is that if there was something wrong with the AI model, it should be possible to accuractely assign liability for different parties. For this project, we are all very clear on the individual parts that we are taking, and the models that we have built. Each of our group members have their own research questions, and as such, i beleive it is possible to for us to be accountable if there are indeed something wrong with our models that lead to unfavourable outcomes, but again as I have mentioned, this risk is very low because of the type of data available in the dataset.
 
-On Transparency, 
+On Transparency, the model that I have chose to build is Linear Regression and Random Forest, which are both supervised learning. To understand the conclusions, it is possible to examine what the model has been trained on, hence the model is largely transparent. I also set the random state, so it is replicable as well.
 
-Discuss the potential data science ethics issues (privacy, fairness, accuracy, accountability, transparency) in your project. 
+Overall, evaluating this project, there were no strong ethical AI issues due to the nature of the dataset which has no personally identifiable data, and also a lack of demographic data which reduces the risk of unfavourably discriminating against any particular groups.
 
 
 ## Source Codes and Datasets
-Upload your model files and dataset into a GitHub repo and add the link here. 
-https://github.com/nyp2049767t/itd214_project
+The dataset and python modelling files can be found in the following link: https://github.com/nyp2049767t/itd214_project
