@@ -28,17 +28,25 @@ The other model that I have built is linear regression. The dependent variable, 
 
 
 ### Evaluation
-Overall, the Random Forest had a mean-squared error of 306,374, while the Linear Regression model had a mean-squared error of 271,660. As the mean-squared error of the Linear Regression model is lower, it is evaluated to be the better model.
+Overall, the Random Forest had a mean-squared error of 306,374, while the Linear Regression model had a mean-squared error of 271,660. As the mean-squared error of the Linear Regression model is lower, the linear regression is evaluated to be the better model.
+
 
 ## Recommendation and Analysis
-Explain the analysis and recommendations
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+Based on the Linear Regression Model, the most important variables are lead quality, occupation, and activity score. On the other hand, certain demographic variables, such as the city or country, was not significantly correlated, which was in a way, surprising. On the finding for occupation, it would probably be better for the company to re-design its website such that it is more catered to those that are already working. Additionally, perhaps its course offerings could also try to reflect that, to have something that is more relevant to industries, which could then improve time spent on website and conversion rate. On lead quality, this suggests that the educational institute should invest in more resources to improve its lead information. This is because the variables on lead information tends to also have a larger proportion of missing values. Doing so may therefore improve the performance of future models. Lastly, the model can also improve if it can also capture more basic variables, such as age and gender for analysis.
 
 ## AI Ethics
+One issue related to AI ethics in this project is privacy. In terms of privacy, there were no explicit information on whether consent had obtained for the respondents that are included in this dataset. However, at the very least, the dataset itself does not contain any identifiable data, and hence, using it in that sense, any model training will not infringe on personal privacy in this regards.
+
+On Fairness, using this data will also not lead to any significant discriminatory on unfairness, precisely because the data itself actually does not have any pertinent demographic information. As such, it is unlikely to lead to bias towards or against any vulnerable groups. 
+
+On Accuracy, it is difficult to ascertain the exact accuracy of the dataset as there are no other ways to triangulate it. The ethical issue at play for accuracy is that if the data is of poor quality, especially in terms of accuracy it may lead to unfair outcomes. In terms of data quality, there are quite a number of missing variables in the data, which ideally should be mitigated further to reduce biasedness. The model that I built relies on listwise deletion, which if the missing variables are not missing completely at random (MCAR), could potentially introduce bias into my model. I have tested it before, and the missing values are indeed not MCAR. As such, there are some bias introduced into the model on my decision to use listwise deletion. That being said, as the dataset did not really have any variables that are more sensitive to vulnerable groups, it is unlikely that the poorer quality and the decision to use listwise deletion (which introduced additional bias) would lead to any ethical or discriminatory outcomes that are unfavourable to certain vulnerable groups.
+
+On Accountability, the idea is that if there are something wrong with the AI model, it should be possible to accuractely assign liability for different parties. For this project, we are all very clear on the individual parts that we are taking, and the models that we have built. Each of our group members have their own research questions, and as such, i beleive it is possible to for us to be accountable if there are indeed something wrong with our models that lead to unfavourable outcomes, but again as I have mentioned, this risk is very low because of the type of data available in the dataset.
+
+On Transparency, 
+
 Discuss the potential data science ethics issues (privacy, fairness, accuracy, accountability, transparency) in your project. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
 
 ## Source Codes and Datasets
 Upload your model files and dataset into a GitHub repo and add the link here. 
